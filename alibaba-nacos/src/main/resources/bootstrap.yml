@@ -13,7 +13,7 @@ db:
   user: root
   password: root
   url:
-    0: jdbc:mysql://${MYSQL-HOST:mysql.dmcp.com}:${MYSQL-PORT:3306}/${MYSQL-DB:demo-nacos}?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&nullCatalogMeansCurrent=true
+    0: jdbc:mysql://${MYSQL-HOST:mysql.alibaba-demo.com}:${MYSQL-PORT:3306}/${MYSQL-DB:demo-nacos}?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&nullCatalogMeansCurrent=true
 
 spring:
   datasource:

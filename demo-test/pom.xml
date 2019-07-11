@@ -9,44 +9,30 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>alibaba-nacos</artifactId>
+  <artifactId>demo-test</artifactId>
+  <packaging>jar</packaging>
 
   <dependencies>
+    <!--注册中心客户端-->
     <dependency>
-      <groupId>com.alibaba.nacos</groupId>
-      <artifactId>nacos-config</artifactId>
-      <version>1.0.0</version>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
     </dependency>
+    <!--配置中心客户端-->
     <dependency>
-      <groupId>com.alibaba.nacos</groupId>
-      <artifactId>nacos-naming</artifactId>
-      <version>1.0.0</version>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
     </dependency>
+
+    <!--web 模块-->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <!--undertow容器-->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-undertow</artifactId>
-    </dependency>
-    <!-- log -->
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-security</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>io.jsonwebtoken</groupId>
-      <artifactId>jjwt-api</artifactId>
-      <version>0.10.5</version>
-    </dependency>
-    <dependency>
-      <groupId>io.jsonwebtoken</groupId>
-      <artifactId>jjwt-impl</artifactId>
-      <version>0.10.5</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>io.jsonwebtoken</groupId>
-      <artifactId>jjwt-jackson</artifactId>
-      <version>0.10.5</version>
-      <scope>runtime</scope>
     </dependency>
   </dependencies>
 
@@ -58,5 +44,4 @@
       </plugin>
     </plugins>
   </build>
-
 </project>
